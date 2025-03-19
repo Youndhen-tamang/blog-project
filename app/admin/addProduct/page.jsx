@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { assets } from '@/Assets/assets'
 import axios from 'axios'
 import { toast } from 'react-toastify'
-const page = () => {
+const Page = () => {
   const [image, setImage] = useState(false)
   const imageRef = useRef();
   const [data,setData] = useState({
@@ -80,4 +80,4 @@ const page = () => {
   )
 }
 
-export default page 
+export default Page 
