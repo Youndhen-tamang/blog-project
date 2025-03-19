@@ -5,10 +5,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 
-const page = ({params}) => {
+const Page = ({params}) => {
   const [data,setData] = useState(blog_data);
 
-  const fetchBlogData = ()=>{
+  function fetchBlogData() {
     blog_data.map((item)=>{
       if(item.id == params.id){
         setData(item);
@@ -72,4 +72,4 @@ const page = ({params}) => {
   )
 }
 
-export default page
+export default Page
